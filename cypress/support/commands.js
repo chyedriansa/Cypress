@@ -17,8 +17,16 @@ Cypress.Commands.add('setCustomViewport', (width, height) => {
         cy.setCustomViewport(1280, 720); 
 });
 
-
-
+//fungsi untuk nama dan card number
+Cypress.Commands.add('payment', (Name, ccNumber) => {
+    cy.get('#Input_HolderName').type('Zack Norrington')
+    cy.get('#Input_CardNumber').type('5435765590802121')
+    cy.get('#Input_ExpMonth').click()
+    cy.contains('4').click()
+    cy.get('#Input_ExpYear').click()
+    cy.contains('2026').click()
+    cy.get('#Input_CVV').type('322')
+})
 
 // ***********************************************
 // This example commands.js shows you how to
