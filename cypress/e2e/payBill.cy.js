@@ -1,11 +1,11 @@
-describe('Paybill Case' , () => {
+describe('Paybill Case', () => {
 
-    beforeEach(() =>{
+    beforeEach(() => {
         cy.visit('https://samaktamitrapt-dev.outsystemsenterprise.com/ClaimPortal/')
         cy.login('angela.garcia', '123456')
     })
 
-    it('Positive : Paybill' , () => {
+    it('Positive : Paybill', () => {
         cy.contains('Invoices').click()
         cy.get('#ListInvoices_StatusDropdown').click()
         cy.contains('Unpaid').click()
@@ -13,6 +13,6 @@ describe('Paybill Case' , () => {
         cy.contains('Pay bill').click()
         cy.payment()
         cy.get('#CreditCardForm_Btn').click()
-        cy.contains('paid').should('exist')
+        cy.contains('paid').should('exist') //status jika pengujian selesai
     })
 })

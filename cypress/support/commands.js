@@ -10,10 +10,10 @@ Cypress.Commands.add('login', (username, password) => {
 //fungsi untuk setup layout display
 Cypress.Commands.add('setCustomViewport', (width, height) => {
     cy.viewport(width, height);
-    });
-    
-    beforeEach(() => {
-        cy.setCustomViewport(1280, 720); 
+});
+
+beforeEach(() => {
+    cy.setCustomViewport(1280, 720);
 });
 
 //fungsi untuk nama dan card number
@@ -21,7 +21,7 @@ Cypress.Commands.add('payment', (Name, ccNumber) => {
     cy.get('#Input_HolderName').type('Zack Norrington')
     cy.get('#Input_CardNumber').type('5435765590802121')
     cy.get('#Input_ExpMonth').click()
-    cy.contains('4').click()
+    cy.contains('5').click()
     cy.get('#Input_ExpYear').click()
     cy.contains('2026').click()
     cy.get('#Input_CVV').type('322')

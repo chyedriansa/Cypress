@@ -5,7 +5,7 @@ describe('Login Case', () => {
         cy.login('charles.estevez', '123456')
     })
 
-    it('Set Unpaid' , () => {
+    it('Set Unpaid', () => {
         cy.contains('Invoices').click()
         cy.get('#ListInvoices_StatusDropdown').click()
         cy.contains('Submit').click()
