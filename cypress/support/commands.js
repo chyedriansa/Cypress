@@ -1,4 +1,3 @@
-
 //fungsi untuk login
 Cypress.Commands.add('login', (username, password) => {
     cy.visit('https://samaktamitrapt-dev.outsystemsenterprise.com/ClaimPortal/')

@@ -7,6 +7,8 @@ describe('Login Case', () => {
 
     it('Set Unpaid' , () => {
         cy.contains('Invoices').click()
+        cy.get('#ListInvoices_StatusDropdown').click()
+        cy.contains('Submit').click()
         cy.contains('0000001').click()
         cy.contains('Set Unpaid').click()
         cy.contains('Unpaid').should('exist')

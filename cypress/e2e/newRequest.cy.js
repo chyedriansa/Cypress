@@ -1,9 +1,10 @@
 //fungsi membuat random data
-var randomData = ["CY1" , "CY2" , "CY3" , "CY4" , "CY5"]
+var randomData = ["CY1" , "CY2" , "CY3" , "CY4" , "CY5" , "0000001" , "0000001"]
 var x = Math.floor((Math.random() *4)) +1;
 
 
 describe('Login Case', () => {
+
     //inisiasi random data
     var _InvoiceNumber = randomData [x] 
     beforeEach(() => {
