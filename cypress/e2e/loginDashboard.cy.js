@@ -1,7 +1,7 @@
 describe('Login Case', () => {
     beforeEach(() => {
         cy.visit('https://samaktamitrapt-dev.outsystemsenterprise.com/ClaimPortal/')
-        cy.wait(2000)
+        cy.wait(1500)
     })
 
     //Login dengan username charles.estevez

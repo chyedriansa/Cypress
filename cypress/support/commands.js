@@ -1,7 +1,7 @@
 //fungsi untuk login
 Cypress.Commands.add('login', (username, password) => {
     cy.visit('https://samaktamitrapt-dev.outsystemsenterprise.com/ClaimPortal/')
-    cy.wait(2000)
+    cy.wait(2500)
     cy.get('#Input_UsernameVal').type(username)
     cy.get('#Input_PasswordVal').type(password)
     cy.contains('button', 'Log in').click()

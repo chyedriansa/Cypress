@@ -1,4 +1,4 @@
-describe('Paybill Case', () => {
+describe('Paybill Cases', () => {
 
     beforeEach(() => {
         cy.visit('https://samaktamitrapt-dev.outsystemsenterprise.com/ClaimPortal/')
