@@ -18,10 +18,12 @@ Cypress is a popular automated testing tool used to test modern web applications
 - Prepare link to be tested
 - Clone this repository
 - open git bash terminal 
-                - type "npm init-y"
+#
+                - type "npm init-y" 
                 - type "npm cypress install"
                 - type "npx cypress verify"
                 - and then type "npx cypress open"
+#
 - wait untill cypress opened 
 - choose e2e testing with status "configured"
 - happy testing
