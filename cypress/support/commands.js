@@ -21,7 +21,7 @@ Cypress.Commands.add('payment', (Name, ccNumber) => {
     cy.get('#Input_HolderName').type('Zack Norrington')
     cy.get('#Input_CardNumber').type('5435765590802121')
     cy.get('#Input_ExpMonth').click()
-    cy.contains('5').click()
+    cy.contains('12').click()
     cy.get('#Input_ExpYear').click()
     cy.contains('2026').click()
     cy.get('#Input_CVV').type('322')

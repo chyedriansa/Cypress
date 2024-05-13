@@ -2,10 +2,6 @@
 var randomData = ["CY1", "CY2", "CY3", "CY4", "CY5", "0000001", "0000002"]
 var x = Math.floor((Math.random() * 6)) + 1;
 
-var randomData = ["CY1", "CY2", "CY3", "CY4", "CY5", "0000001", "0000001"]
-var x = Math.floor((Math.random() * 6)) + 1;
-
-
 describe('Login Case', () => {
 
     //inisiasi random data
